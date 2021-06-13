@@ -1,0 +1,20 @@
+Navigation bar with the following items
+  - Home
+  - Projects
+  - Contact/Freelance info
+  - About
+
+Home page should have something cool that draws attention to it
+something with a really modern and nice design that has a techy feel to it
+  - it should also have links to my socials, linked-in, github, email, and you know
+
+When you scroll down it will have layers, each of which will lead to another of the
+sections of the website, however each one will have information about that section
+  - For example, the first layer will be about projects, it will entise the reader
+    and provide a little bit of insight into the projects, without giving away all
+    of the information
+  - Each page should take up the entire screen
+
+Finally there will be a footer with all of the other relevant information
+
+The color scheme should be dark, and revolve around black, and tasteful red
