@@ -7,6 +7,7 @@ Navigation bar with the following items
 Home page should have something cool that draws attention to it
 something with a really modern and nice design that has a techy feel to it
   - it should also have links to my socials, linked-in, github, email, and you know
+  - I'm thinking of adding some sort of node line drawing art thing
 
 When you scroll down it will have layers, each of which will lead to another of the
 sections of the website, however each one will have information about that section
@@ -18,3 +19,10 @@ sections of the website, however each one will have information about that secti
 Finally there will be a footer with all of the other relevant information
 
 The color scheme should be dark, and revolve around black, and tasteful red
+Only use bootstrap to deterine positioning and element sizes. Font's and colors will be done manually
+  - In other words, only use the col-md-4 like types
+
+modify the scrollbar
+
+rem - relative to font size
+vh - percentage of viewport height
