@@ -6,7 +6,14 @@
 }
 
 body {
-	background-color: white;
+	background-color: #edf0f1;
+}
+
+p {
+	color: #edf0f1;
+
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
 }
 
 li, a, button{
@@ -54,4 +61,29 @@ button {
 
 button:hover {
 	background-color: rgba(0, 136, 169, 0.8);
+}
+
+#splash-info {
+	margin: auto;
+	padding: 19vh 0;
+	display: flex;
+	justify-content: center;
+}
+
+.information {
+	/* background-color: #24252A; */
+}
+
+.info-text {
+	color: black;
+	margin: 2rem;
+}
+
+#face-image {
+	display: block;
+	margin: auto;
+	border-radius: 50px;
+
+	width: 18vw;
+	height: auto;
 }

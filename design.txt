@@ -8,6 +8,8 @@ Home page should have something cool that draws attention to it
 something with a really modern and nice design that has a techy feel to it
   - it should also have links to my socials, linked-in, github, email, and you know
   - I'm thinking of adding some sort of node line drawing art thing
+  - It should have a box with my picture and info about me, next to an animated spinning
+    3D node drawing
 
 When you scroll down it will have layers, each of which will lead to another of the
 sections of the website, however each one will have information about that section
