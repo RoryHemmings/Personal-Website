@@ -12,14 +12,13 @@ li, a, button{
 
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
-	font-weight: 700;
 }
 
 header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px 10%;
+	padding: 0vh 10%;
 }
 
 .navbar-links {
@@ -29,7 +28,7 @@ header {
 
 .navbar-links li {
 	display: inline-block;
-	padding: 0rem 2rem;
+	padding: 0rem 1vw;
 }
 
 .navbar-links li a {
@@ -38,4 +37,16 @@ header {
 
 .navbar-links li a:hover {
 	color: #0088a9;
+}
+
+button {
+	padding: 9px 25px;	
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
 }
