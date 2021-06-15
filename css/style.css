@@ -3,7 +3,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: #24252A;
+}
+
+body {
+	background-color: white;
 }
 
 li, a, button{
@@ -19,6 +22,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0vh 10%;
+
+	background-color: #24252A;
 }
 
 .navbar-links {
