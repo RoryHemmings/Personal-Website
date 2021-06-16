@@ -28,3 +28,4 @@ modify the scrollbar
 
 rem - relative to font size
 vh - percentage of viewport height
+scroll reveal 
