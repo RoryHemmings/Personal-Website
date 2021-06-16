@@ -102,14 +102,6 @@ button:hover {
 	background-color: #24252A;
 } */
 
-#flip-image {
-	display: block;
-	margin: auto;
-	border-radius: 50px;
-
-	width: 100%;
-	height: auto;
-}
 
 #splash-info {
 }
@@ -147,7 +139,20 @@ button:hover {
 	height: auto;
 }
 
+#flip-image {
+	display: block;
+	margin: auto;
+	border-radius: 50px;
+
+	width: 100%;
+	height: auto;
+}
+
 #project-image {
+	width: 40vw;
+}
+
+#business-image {
 	width: 40vw;
 }
 

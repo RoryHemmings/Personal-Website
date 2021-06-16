@@ -3,9 +3,10 @@ $(document).ready(() => {
 	$("footer").load("../components/footer.html");
 });
 
-const width = 500;
-const height = 500;
-const depth = 500;
+const size = 500;
+const width = size;
+const height = size;
+const depth = size;
 
 const fps = 60;
 const delta = 1.0/fps;
@@ -13,9 +14,9 @@ const delta = 1.0/fps;
 let graph;
 
 class Node {
-	constructor(id, radius=15) {
+	constructor(id) {
 		this.id = id;
-		this.radius = radius;
+		this.radius = 0.03*width;
 		this.x = 0;
 		this.y = 0;
 		this.z = 0;
@@ -39,7 +40,8 @@ class Node {
 		// ellipse(this.x, this.y, 20);
 		push();
 
-		fill('red');
+		// fill('red');
+		specularMaterial(255, 255, 255);
 		translate(this.x, this.y, this.z);
 		sphere(this.radius); 
 
@@ -163,6 +165,8 @@ function setup() {
 function draw() {
 	// Make sure that everything fits into the camera
 	translate(0, 0, -170);
+	pointLight(0, 0, 255, 0, -500, 0);
+	pointLight(255, 0, 0, 0, 0, 500);
 	background('#edf0f1');
 
 	graph.draw();
