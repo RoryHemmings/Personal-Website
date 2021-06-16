@@ -115,21 +115,21 @@ class Graph {
 
 	draw() {
 		this.angle += 30 * delta;
-		if (this.framesSinceAnimation >= fps / this.animationInterval) {
+		if (this.framesSinceAnimation >= (fps * this.animationInterval)) {
 			this.randomize();
 		}
 
 		// Visualize axis
-		push();
-		for (let x = 1; x < (width / this.spacing); x++) {
-			stroke(0);
-			line(x*this.spacing, 0, x*this.spacing, height);
-		}
-		for (let y = 1; y < (height / this.spacing); y++) {
-			stroke(0);
-			line(0, y*this.spacing, width, y*this.spacing);
-		}
-		pop();
+		// push();
+		// for (let x = 1; x < (width / this.spacing); x++) {
+		// 	stroke(0);
+		// 	line(x*this.spacing, 0, x*this.spacing, height);
+		// }
+		// for (let y = 1; y < (height / this.spacing); y++) {
+		// 	stroke(0);
+		// 	line(0, y*this.spacing, width, y*this.spacing);
+		// }
+		// pop();
 
 		this.nodes.forEach(node => {
 			node.draw();

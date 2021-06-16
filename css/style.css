@@ -73,6 +73,9 @@ button {
 	border: none;
 	border-radius: 50px;
 	transition: all 0.3s ease 0s;
+
+	display: block;
+	margin: auto;
 }
 
 button:hover {
@@ -82,8 +85,17 @@ button:hover {
 .page-info {
 	display: flex;
 	margin: auto;
-	padding: 20vh;
+	padding: 10vh;
 	justify-content: center;
+}
+
+.column {
+	padding: 5vw;
+}
+
+.info-text {
+	text-align: center;
+	margin: 2rem;
 }
 
 /* .information {
@@ -95,12 +107,11 @@ button:hover {
 	margin: auto;
 	border-radius: 50px;
 
-	width: 20vw;
+	width: 100%;
 	height: auto;
 }
 
 #splash-info {
-	padding: 19vh 0;
 }
 
 #splash-info p {
@@ -121,6 +132,10 @@ button:hover {
 
 #about-preview {
 	background-color: var(--dark-1);
+}
+
+#about-preview p {
+	color: var(--light);
 }
 
 #face-image {
