@@ -5,6 +5,7 @@ $(document).ready(() => {
 
 const width = 500;
 const height = 500;
+const depth = 500;
 
 const fps = 60;
 const delta = 1.0/fps;
@@ -12,10 +13,11 @@ const delta = 1.0/fps;
 let graph;
 
 class Node {
-	constructor(id) {
+	constructor(id, radius=15) {
 		this.id = id;
-		this.x = width / 2;
-		this.y = height / 2;
+		this.radius = radius;
+		this.x = 0;
+		this.y = 0;
 		this.z = 0;
 
 		this.xTarget = this.x;
@@ -34,14 +36,20 @@ class Node {
 		this.y += this.yVel;
 		this.z += this.zVel;
 		
+		// ellipse(this.x, this.y, 20);
+		push();
+
 		fill('red');
-		ellipse(this.x, this.y, 20);
+		translate(this.x, this.y, this.z);
+		sphere(this.radius); 
+
+		pop();
 
 		this.neighbors.forEach(neighbor => {
 			push();
 
 			stroke(0);
-			line(this.x, this.y, neighbor.x, neighbor.y);
+			line(this.x, this.y, this.z, neighbor.x, neighbor.y, neighbor.z);
 
 			pop();
 		});
@@ -100,12 +108,14 @@ class Graph {
 		let x, y, z;
 		let minX = 1; 
 		let minY = 1;
+		let minZ = 1;
 		let maxX = width / this.spacing;
 		let maxY = height / this.spacing;
+		let maxZ = depth / this.spacing;
 		for (let i = 0; i < this.numNodes; ++i) {
-			x = Math.floor((Math.random()*(maxX - minX)) + minX) * this.spacing; 
-			y = Math.floor((Math.random()*(maxY - minY)) + minY) * this.spacing;
-			z = 0;
+			x = (Math.floor((Math.random()*(maxX - minX)) + minX) * this.spacing) - Math.floor(width/2); 
+			y = (Math.floor((Math.random()*(maxY - minY)) + minY) * this.spacing) - Math.floor(height/2);
+			z = (Math.floor((Math.random()*(maxZ - minZ)) + minZ) * this.spacing) - Math.floor(depth/2);
 
 			this.nodes[i].setTarget(x, y, z, this.animationInterval);
 		}
@@ -114,7 +124,7 @@ class Graph {
 	}
 
 	draw() {
-		this.angle += 30 * delta;
+		rotateY(this.angle);
 		if (this.framesSinceAnimation >= (fps * this.animationInterval)) {
 			this.randomize();
 		}
@@ -123,11 +133,11 @@ class Graph {
 		// push();
 		// for (let x = 1; x < (width / this.spacing); x++) {
 		// 	stroke(0);
-		// 	line(x*this.spacing, 0, x*this.spacing, height);
+		// 	line(x*this.spacing - width/2, -(height/2), x*this.spacing - width/2, height);
 		// }
 		// for (let y = 1; y < (height / this.spacing); y++) {
 		// 	stroke(0);
-		// 	line(0, y*this.spacing, width, y*this.spacing);
+		// 	line(-(width/2), y*this.spacing - height / 2, width, y*this.spacing - height/2);
 		// }
 		// pop();
 
@@ -136,11 +146,12 @@ class Graph {
 		});
 
 		this.framesSinceAnimation++;
+		this.angle += (Math.PI*delta);
 	}
 }
 
 function setup() {
-	let canvas = createCanvas(width, height);
+	let canvas = createCanvas(width + (width*0.2), height + (height*0.2), WEBGL);
 	canvas.parent('canvas-target');
 
 	graph = new Graph(15, 40, 4, 1);
@@ -150,6 +161,8 @@ function setup() {
 }
 
 function draw() {
+	// Make sure that everything fits into the camera
+	translate(0, 0, -170);
 	background('#edf0f1');
 
 	graph.draw();
