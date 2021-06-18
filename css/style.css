@@ -84,30 +84,11 @@ button:hover {
 
 .page-info {
 	display: flex;
-	margin: auto;
-	padding: 10vh;
 	justify-content: center;
 }
 
-.column {
-	padding: 5vw;
-}
-
-.info-text {
-	text-align: center;
-	margin: 2rem;
-}
-
-/* .information {
-	background-color: #24252A;
-} */
-
-
-#splash-info {
-}
-
-#splash-info p {
-	color: var(--dark-1);
+#splash-info img {
+	width: 100vw;
 }
 
 #projects-preview {
@@ -139,14 +120,6 @@ button:hover {
 	height: auto;
 }
 
-#flip-image {
-	display: block;
-	margin: auto;
-	border-radius: 50px;
-
-	width: 100%;
-	height: auto;
-}
 
 #project-image {
 	width: 40vw;
