@@ -41,11 +41,15 @@ header {
 
 footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 0vh 10%;
+	padding: 2vh 10%;
 
 	background-color: var(--dark-1);
+}
+
+hr {
+	color: var(--light);
 }
 
 footer p {
@@ -88,10 +92,20 @@ button:hover {
 .page-info {
 	display: flex;
 	justify-content: center;
+	padding: 10vh;
+	align-items: center;
+}
+
+.page-info p { 
+	padding: 1rem;
 }
 
 .logo {
 	font-size: 25px;
+}
+
+.column {
+	padding: 3rem;
 }
 
 #splash-info {
@@ -107,29 +121,32 @@ button:hover {
 }
 
 #projects-preview {
-	background-color: var(--dark-1);
-}
-
-#projects-preview p {
-	color: var(--light);
-}
-
-#business-preview {
 	background-color: var(--light);
 }
 
-#about-preview {
+#projects-preview p {
+	color: var(--dark-1);
+}
+
+#business-preview {
 	background-color: var(--dark-1);
 }
 
-#about-preview p {
+#business-preview p {
 	color: var(--light);
+}
+
+#about-preview {
+	background-color: var(--light);
+}
+
+#about-preview p {
+	color: var(--dark-1);
 }
 
 #face-image {
 	display: block;
 	margin: auto;
-	border-radius: 50px;
 
 	width: 20vw;
 	height: auto;
