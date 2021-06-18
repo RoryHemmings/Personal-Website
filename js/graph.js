@@ -1,7 +1,7 @@
 const fps = 60;
 const delta = 1.0/fps;
 
-const zoomConstant = 700;
+const zoomConstant = 200;
 
 let graph;
 
@@ -140,7 +140,7 @@ class Graph {
 		});
 
 		this.framesSinceAnimation++;
-		this.angle += (Math.PI*delta);
+		this.angle += (Math.PI*delta)*0.5;
 	}
 }
 
@@ -150,7 +150,7 @@ function setup() {
 
 	canvas.parent('canvas-target');
 
-	graph = new Graph(15, 40, 4, 1);
+	graph = new Graph(15, 40, 4, 5);
 
 	frameRate(fps);
 	noStroke();
@@ -171,7 +171,8 @@ function windowResized() {
 }
 
 function updateSize() {
-	size = window.innerWidth;
+	// size = window.innerWidth;
+	size = 500;
 	console.log(size);	
 
 	width = size;

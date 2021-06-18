@@ -14,8 +14,11 @@ body {
 	background-color: var(--light);
 }
 
-p {
+h1, p {
 	font-family: "Open Sans", sans-serif;
+}
+
+p {
 	font-size: 14px;
 }
 
@@ -56,7 +59,7 @@ footer p {
 
 .navbar-links li {
 	display: inline-block;
-	padding: 0rem 1vw;
+	padding: 1.5rem 1vw;
 }
 
 .navbar-links li a {
@@ -87,8 +90,20 @@ button:hover {
 	justify-content: center;
 }
 
-#splash-info img {
-	width: 100vw;
+.logo {
+	font-size: 25px;
+}
+
+#splash-info {
+	background-image: url('/img/flip.jpg');
+	background-size: 100%;
+	background-position: center;
+	padding: 40vh;
+}
+
+#splash-info p {
+	font-size: 48px;
+	color: var(--light);
 }
 
 #projects-preview {
