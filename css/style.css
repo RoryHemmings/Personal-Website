@@ -201,3 +201,18 @@ footer p {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
 } */
+
+
+
+
+/* Projects Page */
+
+canvas {
+	position: relative;
+	z-index: -3 !important;
+}
+
+#projects-splash {
+	padding: 100px;
+	background: -webkit-canvas(canvas-target);
+}

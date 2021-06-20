@@ -146,7 +146,12 @@ class Graph {
 
 function setup() {
 	let canvas = createCanvas(500, 500, WEBGL);
+	console.log(canvas);
 	updateSize();
+
+	// $('projects-splash').css({
+	// 	'background-image': `url(${canvas.toDataURL("image/png")})`
+	// });
 
 	canvas.parent('canvas-target');
 
