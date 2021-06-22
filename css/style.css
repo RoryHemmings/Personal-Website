@@ -214,5 +214,5 @@ canvas {
 
 #projects-splash {
 	padding: 100px;
-	background: -webkit-canvas(canvas-target);
+	background: -webkit-canvas("canvas-target");
 }
