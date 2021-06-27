@@ -215,4 +215,20 @@ canvas {
 #projects-splash {
 	padding: 100px;
 	background: -webkit-canvas("canvas-target");
+	text-align: center;
 }
+
+#projects-splash h1 {
+	font-size: 10rem;
+	padding: var(--mb-2);
+}
+
+#projects-splash p {
+	font-size: 24px;
+}
+
+#projects-splash img {
+	width: 6rem;
+	padding: var(--mb-2);
+}
+
