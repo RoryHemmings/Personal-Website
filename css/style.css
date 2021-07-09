@@ -7,8 +7,8 @@
 }
 
 /* Spacing */
-:root {
-	--mb-1: 0.5rem;
+	:root {
+		--mb-1: 0.5rem;
 	--mb-2: 1rem;
 	--mb-3: 1.5rem;
 	--mb-4: 2rem;
@@ -25,7 +25,7 @@ body {
 	background-color: var(--light);
 }
 
-h1, p {
+h1, h3, p {
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -207,14 +207,8 @@ footer p {
 
 /* Projects Page */
 
-canvas {
-	position: relative;
-	z-index: -3 !important;
-}
-
 #projects-splash {
 	padding: 100px;
-	background: -webkit-canvas("canvas-target");
 	text-align: center;
 }
 
