@@ -226,3 +226,7 @@ footer p {
 	padding: var(--mb-2);
 }
 
+.project-expo a {
+	color: var(--dark-1);
+}
+
