@@ -38,6 +38,5 @@ make all preview things stack instead of being columns
 
 
 Projects Page:
-use the cool animation thing as a background for the intro section
-talk about the skills I have, and touch on projects
 Each section of the page will have a project on it
+Add graph of which programming languages were used for each of the project
