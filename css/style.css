@@ -213,7 +213,30 @@ footer p {
 } */
 
 
+/* General Page Secondary Page Styling */
 
+.splash {
+	padding: 5vh;
+	text-align: center;
+	width: 50vw;
+	
+	display: block;
+	margin: auto;
+}
+
+.splash h1 {
+	font-size: 10rem;
+	padding: var(--mb-2);
+}
+
+.splash p {
+	font-size: 24px;
+}
+
+.splash img {
+	margin-bottom: var(--mb-6);
+	border-radius: 30px;
+}
 
 /* Projects Page */
 
@@ -259,25 +282,13 @@ footer p {
 
 /* About Page */
 
-#about-me {
-	padding: 5vh;
-	text-align: center;
-	width: 50vw;
-	
-	display: block;
-	margin: auto;
-}
 
-#about-me h1 {
-	font-size: 10rem;
-	padding: var(--mb-2);
-}
 
-#about-me p {
-	font-size: 24px;
-}
 
-#about-me img {
-	margin-bottom: var(--mb-6);
-	border-radius: 30px;
+
+
+/* Splash Page */
+
+#contact-splash {
+	padding: 23vh;
 }
