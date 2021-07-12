@@ -260,8 +260,12 @@ footer p {
 /* About Page */
 
 #about-me {
-	padding: 20vh;
+	padding: 5vh;
 	text-align: center;
+	width: 50vw;
+	
+	display: block;
+	margin: auto;
 }
 
 #about-me h1 {
@@ -271,4 +275,9 @@ footer p {
 
 #about-me p {
 	font-size: 24px;
+}
+
+#about-me img {
+	margin-bottom: var(--mb-6);
+	border-radius: 30px;
 }
