@@ -250,3 +250,25 @@ footer p {
 	text-align: center;
 	margin-bottom: var(--mb-2);
 }
+
+.project-expo-text {
+	width: 30vw;
+}
+
+
+
+/* About Page */
+
+#about-me {
+	padding: 20vh;
+	text-align: center;
+}
+
+#about-me h1 {
+	font-size: 10rem;
+	padding: var(--mb-2);
+}
+
+#about-me p {
+	font-size: 24px;
+}
