@@ -241,7 +241,7 @@ footer p {
 /* Projects Page */
 
 #projects-splash {
-	padding: 20vh;
+	padding: 15vh;
 	text-align: center;
 }
 
@@ -263,6 +263,7 @@ footer p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 2vh;
 }
 
 .project-expo a {
@@ -276,6 +277,11 @@ footer p {
 
 .project-expo-text {
 	width: 30vw;
+}
+
+.project-image {
+	width: 500px;
+	margin-bottom: var(--mb-2);
 }
 
 
