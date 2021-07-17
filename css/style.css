@@ -146,7 +146,6 @@ footer p {
 	padding: 1rem;
 }
 
-
 .column {
 	padding: 3rem;
 }
@@ -176,21 +175,17 @@ footer p {
 	color: var(--dark-1);
 }
 
+.card-image {
+	border-radius: 40px;
+	width: 40vw;
+}
+
 #face-image {
-	display: block;
-	margin: auto;
-
 	width: 20vw;
-	height: auto;
 }
 
-
-#project-preview-image {
-	width: 40vw;
-}
-
-#business-image {
-	width: 40vw;
+.info-text {
+	width: 25vw;
 }
 
 /* ::-webkit-scrollbar {
@@ -233,16 +228,15 @@ footer p {
 	font-size: 24px;
 }
 
-.splash img {
-	margin-bottom: var(--mb-6);
-	border-radius: 30px;
-}
 
 /* Projects Page */
 
 #projects-splash {
 	padding: 15vh;
 	text-align: center;
+
+	background-image: url("/img/codebackground.png");
+	color: white;
 }
 
 #projects-splash h1 {
@@ -257,6 +251,14 @@ footer p {
 #projects-splash img {
 	width: 6rem;
 	padding: var(--mb-2);
+}
+
+#projects-splash div {
+	background-color:#24252aa6; 
+	border: 3px solid white;
+	width: 60vw;
+	margin: auto;
+	padding: 20px;
 }
 
 .project-expo {
@@ -289,8 +291,10 @@ footer p {
 /* About Page */
 
 
-
-
+#about-splash img {
+	margin-bottom: var(--mb-6);
+	border-radius: 30px;
+}
 
 
 /* Splash Page */
