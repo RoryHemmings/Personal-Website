@@ -119,17 +119,22 @@ footer p {
 /* Mobile */
 
 #splash-info {
-	text-align: center;
 	background-image: url('/img/flip.jpg');
 	background-size: cover;
 	background-position: 33% center;
-	padding: 40vh;
 }
 
 #splash-info p {
-	font-size: 24px;
+	font-size: 36px;
 	color: var(--light);
 	margin-bottom: var(--mb-2);
+}
+
+#splash-container {
+	padding: 30vh 0px;
+	background-color: #24252aa6;
+	width: 100%;
+	padding: 35vh 0;
 }
 
 .page-info {
@@ -137,31 +142,25 @@ footer p {
 	text-align: center;
 }
 
+#socials {
+	display: flex;
+	justify-content: center;
+}
+
 .social {
-	width: 3.0vw;
+	width: 2.0rem;
+	margin: 2px;
 }
 
 /* Desktop */
 
 @media only screen and (min-width: 768px) {
-	#splash-info {
-		text-align: center;
-		background-image: url('/img/flip.jpg');
-		background-size: cover;
-		background-position: 33% center;
-		padding: 40vh;
-	}
-	#splash-info p {
+	#splash-container p {
 		font-size: 48px;
 		color: var(--light);
-		margin-bottom: var(--mb-2);
-	}
-	#splash-container {
-		margin: auto;
 		display: block;
-		width: 100%;	
-		padding: 10vh 0;
-		/* background-color: #24252aa6; */
+		margin: auto;
+		margin-bottom: var(--mb-2);
 	}
 	.social {
 		width: 3.0rem;
