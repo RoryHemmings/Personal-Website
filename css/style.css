@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 /* Colors */
+
 :root {
 	--light: #edf0f1;
 	--dark-1: #24252A;
 }
 
 /* Spacing */
-	:root {
+
+:root {
 	--mb-1: 0.5rem;
 	--mb-2: 1rem;
 	--mb-3: 1.5rem;
@@ -29,6 +30,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -46,7 +48,6 @@ p {
 li, a, button {
 	color: var(--light);
 	text-decoration: none;
-
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 }
@@ -56,7 +57,6 @@ header {
 	justify-content: flex-end;
 	align-items: center;
 	padding: 0vh 10%;
-
 	background-color: var(--dark-1);
 }
 
@@ -76,7 +76,7 @@ header {
 }
 
 .navbar-links li a {
-	transition: all	0.3s ease 0s;
+	transition: all 0.3s ease 0s;
 }
 
 .navbar-links li a:hover {
@@ -84,36 +84,17 @@ header {
 }
 
 button {
-	padding: 9px 25px;	
+	padding: 9px 25px;
 	background-color: rgba(0, 136, 169, 1);
 	border: none;
 	border-radius: 50px;
 	transition: all 0.3s ease 0s;
-
 	display: block;
 	margin: auto;
 }
 
 button:hover {
 	background-color: rgba(0, 136, 169, 0.8);
-}
-
-#splash-info {
-	text-align: center;
-	background-image: url('/img/flip.jpg');
-	background-size: 100%;
-	background-position: center;
-	padding: 40vh;
-}
-
-#splash-info p {
-	font-size: 48px;
-	color: var(--light);
-	margin-bottom: var(--mb-2);
-}
-
-.social {
-	width: 3.0rem;
 }
 
 footer {
@@ -123,7 +104,7 @@ footer {
 }
 
 footer p {
-	color: var(--light);	
+	color: var(--light);
 }
 
 #footer-logo {
@@ -135,78 +116,82 @@ footer p {
 	margin-bottom: var(--mb-4);
 }
 
-.page-info {
-	display: flex;
-	justify-content: center;
-	padding: 10vh;
-	align-items: center;
+/* Mobile */
+
+#splash-info {
+	text-align: center;
+	background-image: url('/img/flip.jpg');
+	background-size: cover;
+	background-position: 33% center;
+	padding: 40vh;
 }
 
-.page-info p { 
-	padding: 1rem;
-}
-
-.column {
-	padding: 3rem;
-}
-
-
-#projects-preview {
-	background-color: var(--light);
-}
-
-#projects-preview p {
-	color: var(--dark-1);
-}
-
-#business-preview {
-	background-color: var(--dark-1);
-}
-
-#business-preview p {
+#splash-info p {
+	font-size: 24px;
 	color: var(--light);
+	margin-bottom: var(--mb-2);
 }
 
-#about-preview {
-	background-color: var(--light);
+.page-info {
+	display: block;
+	text-align: center;
 }
 
-#about-preview p {
-	color: var(--dark-1);
+.social {
+	width: 3.0vw;
 }
 
-.card-image {
-	border-radius: 40px;
-	width: 40vw;
+/* Desktop */
+
+@media only screen and (min-width: 768px) {
+	#splash-info {
+		text-align: center;
+		background-image: url('/img/flip.jpg');
+		background-size: cover;
+		background-position: 33% center;
+		padding: 40vh;
+	}
+	#splash-info p {
+		font-size: 48px;
+		color: var(--light);
+		margin-bottom: var(--mb-2);
+	}
+	#splash-container {
+		margin: auto;
+		display: block;
+		width: 100%;	
+		padding: 10vh 0;
+		/* background-color: #24252aa6; */
+	}
+	.social {
+		width: 3.0rem;
+	}
+	.page-info {
+		display: flex;
+		justify-content: center;
+		padding: 10vh;
+		align-items: center;
+	}
+	.page-info {
+		padding: 10vh;
+	}
+	.page-info p {
+		padding: 1rem;
+	}
+	.column {
+		padding: 3rem;
+	}
+	.card-image {
+		border-radius: 40px;
+		width: 40vw;
+	}
+	#face-image {
+		width: 20vw;
+	}
+	.info-text {
+		width: 25vw;
+	}
 }
-
-#face-image {
-	width: 20vw;
-}
-
-.info-text {
-	width: 25vw;
-}
-
-/* ::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
-} */
-
 
 /* General Page Secondary Page Styling */
 
@@ -214,7 +199,6 @@ footer p {
 	padding: 5vh;
 	text-align: center;
 	width: 50vw;
-	
 	display: block;
 	margin: auto;
 }
@@ -228,13 +212,11 @@ footer p {
 	font-size: 24px;
 }
 
-
 /* Projects Page */
 
 #projects-splash {
 	padding: 15vh;
 	text-align: center;
-
 	background-image: url("/img/codebackground.png");
 	color: white;
 }
@@ -254,7 +236,7 @@ footer p {
 }
 
 #projects-splash div {
-	background-color:#24252aa6; 
+	background-color: #24252aa6;
 	border: 3px solid white;
 	width: 60vw;
 	margin: auto;
@@ -286,16 +268,12 @@ footer p {
 	margin-bottom: var(--mb-2);
 }
 
-
-
 /* About Page */
-
 
 #about-splash img {
 	margin-bottom: var(--mb-6);
 	border-radius: 30px;
 }
-
 
 /* Splash Page */
 

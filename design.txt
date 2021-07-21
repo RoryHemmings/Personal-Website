@@ -40,3 +40,13 @@ make all preview things stack instead of being columns
 Projects Page:
 Each section of the page will have a project on it
 Add graph of which programming languages were used for each of the project
+
+TODO
+Add as many cdn substitutes as possible to save money
+
+To make responsive
+Make navbar become a sidebar menu
+make link images smaller
+make image background images not repeat
+make columns stack
+
