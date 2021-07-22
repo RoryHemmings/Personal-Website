@@ -73,7 +73,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1.5vh 10%;
+	padding: 1.5vh 0;
 	background-color: var(--dark-1);
 }
 
@@ -88,7 +88,7 @@ header {
 
 .navbar-links li {
 	display: inline-block;
-	padding: 1.5rem 1vw;
+	padding: 1.5rem 1vw 0 1vw;
 }
 
 .navbar-links li a {
@@ -157,7 +157,7 @@ footer p {
 #splash-info {
 	background-image: url('/img/flip.jpg');
 	background-size: cover;
-	background-position: 33% center;
+	background-position: 40% center;
 }
 
 #splash-info p {
@@ -167,10 +167,9 @@ footer p {
 }
 
 #splash-container {
-	padding: 30vh 0px;
+	padding: 20vh 0;
 	background-color: #24252aa6;
 	width: 100%;
-	padding: 35vh 0;
 }
 
 .page-info {
@@ -212,6 +211,11 @@ footer p {
 /* Desktop Specifics */
 
 @media only screen and (min-width: 768px) {
+	#splash-container {
+		padding: 35vh 0;
+		background-color: #24252aa6;
+		width: 100%;
+	}
 	#splash-container p {
 		font-size: 48px;
 		color: var(--light);
