@@ -52,21 +52,37 @@ li, a, button {
 	font-size: 16px;
 }
 
+button {
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	display: block;
+	margin: auto;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Navbar */
+
 header {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	padding: 0vh 10%;
+	padding: 1.5vh 10%;
 	background-color: var(--dark-1);
 }
 
 .logo {
 	font-size: 25px;
-	margin-right: auto;
+	margin: auto;
 }
 
 .navbar-links {
-	display: inline;
 	list-style-type: none;
 }
 
@@ -83,19 +99,39 @@ header {
 	color: #0088a9;
 }
 
-button {
-	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
-	border: none;
-	border-radius: 50px;
-	transition: all 0.3s ease 0s;
-	display: block;
-	margin: auto;
+/* Navbar Desktop Exceptions */
+
+@media only screen and (min-width: 768px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0vh 10%;
+		background-color: var(--dark-1);
+	}
+	.logo {
+		font-size: 25px;
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.navbar-links {
+		display: inline;
+		list-style-type: none;
+	}
+	.navbar-links li {
+		display: inline-block;
+		padding: 1.5rem 1vw;
+	}
+	.navbar-links li a {
+		transition: all 0.3s ease 0s;
+	}
+	.navbar-links li a:hover {
+		color: #0088a9;
+	}
 }
 
-button:hover {
-	background-color: rgba(0, 136, 169, 0.8);
-}
+/* Footer */
 
 footer {
 	padding: 2rem 0;
@@ -116,7 +152,7 @@ footer p {
 	margin-bottom: var(--mb-4);
 }
 
-/* Mobile */
+/* Mobile Design */
 
 #splash-info {
 	background-image: url('/img/flip.jpg');
@@ -138,8 +174,16 @@ footer p {
 }
 
 .page-info {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
+	padding: 10vh;
+}
+
+.page-info p {
+	padding: 1rem 0;
+	margin: auto;
+	display: block;
 }
 
 #socials {
@@ -152,7 +196,20 @@ footer p {
 	margin: 2px;
 }
 
-/* Desktop */
+.card-image {
+	border-radius: 4vw;
+	width: 60vw;
+}
+
+#face-image {
+	width: 40vw;
+}
+
+.info-text {
+	width: 30vw;
+}
+
+/* Desktop Specifics */
 
 @media only screen and (min-width: 768px) {
 	#splash-container p {
@@ -167,21 +224,19 @@ footer p {
 	}
 	.page-info {
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		padding: 10vh;
 		align-items: center;
 	}
-	.page-info {
-		padding: 10vh;
-	}
-	.page-info p {
-		padding: 1rem;
+	.reverse-flex {
+		flex-direction: row-reverse;
 	}
 	.column {
 		padding: 3rem;
 	}
 	.card-image {
-		border-radius: 40px;
+		border-radius: 4vw;
 		width: 40vw;
 	}
 	#face-image {
