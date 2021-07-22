@@ -84,6 +84,7 @@ header {
 
 .navbar-links {
 	list-style-type: none;
+	overflow:unset;
 }
 
 .navbar-links li {
@@ -160,23 +161,25 @@ footer p {
 	background-position: 40% center;
 }
 
-#splash-info p {
+#splash-container {
+	padding: 20vh 0;
+	text-align: center;
+	background-color: #24252aa6;
+	width: 100%;
+}
+
+#splash-container p {
 	font-size: 36px;
 	color: var(--light);
 	margin-bottom: var(--mb-2);
-}
-
-#splash-container {
-	padding: 20vh 0;
-	background-color: #24252aa6;
-	width: 100%;
 }
 
 .page-info {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 10vh;
+	justify-content: center;
+	padding: 10vh 0;
 }
 
 .page-info p {
@@ -205,12 +208,15 @@ footer p {
 }
 
 .info-text {
-	width: 30vw;
+	width: 40vw;
 }
 
 /* Desktop Specifics */
 
 @media only screen and (min-width: 768px) {
+	#splash-info {
+		background-attachment: fixed;
+	}
 	#splash-container {
 		padding: 35vh 0;
 		background-color: #24252aa6;
@@ -263,7 +269,7 @@ footer p {
 
 .splash h1 {
 	font-size: 10rem;
-	padding: var(--mb-2);
+	padding: var(--mb-2) 0;
 }
 
 .splash p {
@@ -273,23 +279,23 @@ footer p {
 /* Projects Page */
 
 #projects-splash {
-	padding: 15vh;
+	padding: 15vh 0;
 	text-align: center;
 	background-image: url("/img/codebackground.png");
 	color: white;
 }
 
 #projects-splash h1 {
-	font-size: 10rem;
+	font-size: 8vw;
 	padding: var(--mb-2);
 }
 
 #projects-splash p {
-	font-size: 24px;
+	font-size: 4vw;
 }
 
 #projects-splash img {
-	width: 6rem;
+	width: 20vw;
 	padding: var(--mb-2);
 }
 
@@ -297,33 +303,82 @@ footer p {
 	background-color: #24252aa6;
 	border: 3px solid white;
 	width: 60vw;
-	margin: auto;
 	padding: 20px;
+	margin: auto;
+	display: block;
 }
 
 .project-expo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2vh;
-}
-
-.project-expo a {
-	color: var(--dark-1);
-}
-
-.project-expo h3, p {
+	flex-direction: column;
+	padding: 5vh;
 	text-align: center;
-	margin-bottom: var(--mb-2);
 }
 
-.project-expo-text {
-	width: 30vw;
+.project-expo div p {
+	margin-bottom: var(--mb-2);
 }
 
 .project-image {
-	width: 500px;
+	width: 50vw;
+	display: block;
+	margin: auto;
 	margin-bottom: var(--mb-2);
+}
+
+/* Projects Page Desktop Specifications */
+
+@media only screen and (min-width: 768px) {
+	#projects-splash {
+		padding: 15vh 0;
+		text-align: center;
+		background-image: url("/img/codebackground.png");
+		color: white;
+	}
+	#projects-splash h1 {
+		font-size: 8vw;
+		padding: var(--mb-2);
+	}
+	#projects-splash p {
+		font-size: 24px;
+	}
+	#projects-splash img {
+		width: 6rem;
+		padding: var(--mb-2);
+	}
+	#projects-splash div {
+		background-color: #24252aa6;
+		border: 3px solid white;
+		width: 60vw;
+		margin: auto;
+		padding: 20px;
+	}
+	.project-expo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		padding: 2vh;
+	}
+	.project-expo a {
+		color: var(--dark-1);
+	}
+	.project-expo h3, p {
+		text-align: center;
+		margin-bottom: var(--mb-2);
+	}
+	.project-expo-text {
+		width: 35vw;
+	}
+	.project-image {
+		width: 28vw;
+		margin-bottom: var(--mb-2);
+	}
+	.reverse-flex {
+		flex-direction: row-reverse;
+	}
 }
 
 /* About Page */
