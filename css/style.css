@@ -260,7 +260,7 @@ footer p {
 /* General Page Secondary Page Styling */
 
 .splash {
-	padding: 5vh;
+	padding: 5vh 0;
 	text-align: center;
 	width: 50vw;
 	display: block;
@@ -391,5 +391,5 @@ footer p {
 /* Splash Page */
 
 #contact-splash {
-	padding: 23vh;
+	padding: 23vh 0;
 }
