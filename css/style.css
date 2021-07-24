@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /* Colors */
 
 :root {
 	--light: #edf0f1;
-	--dark-1: #24252A;
+	--dark-1: #24252a;
 }
 
 /* Spacing */
@@ -37,7 +37,9 @@ body {
 	background-color: var(--light);
 }
 
-h1, h3, p {
+h1,
+h3,
+p {
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -45,7 +47,9 @@ p {
 	font-size: 14px;
 }
 
-li, a, button {
+li,
+a,
+button {
 	color: var(--light);
 	text-decoration: none;
 	font-family: "Open Sans", sans-serif;
@@ -84,7 +88,7 @@ header {
 
 .navbar-links {
 	list-style-type: none;
-	overflow:unset;
+	overflow: unset;
 }
 
 .navbar-links li {
@@ -156,7 +160,7 @@ footer p {
 /* Mobile Design */
 
 #splash-info {
-	background-image: url('/img/flip.jpg');
+	background-image: url("/img/flip.jpg");
 	background-size: cover;
 	background-position: 40% center;
 }
@@ -194,7 +198,7 @@ footer p {
 }
 
 .social {
-	width: 2.0rem;
+	width: 2rem;
 	margin: 2px;
 }
 
@@ -230,7 +234,7 @@ footer p {
 		margin-bottom: var(--mb-2);
 	}
 	.social {
-		width: 3.0rem;
+		width: 3rem;
 	}
 	.page-info {
 		display: flex;
@@ -255,25 +259,6 @@ footer p {
 	.info-text {
 		width: 25vw;
 	}
-}
-
-/* General Page Secondary Page Styling */
-
-.splash {
-	padding: 5vh 0;
-	text-align: center;
-	width: 50vw;
-	display: block;
-	margin: auto;
-}
-
-.splash h1 {
-	font-size: 10rem;
-	padding: var(--mb-2) 0;
-}
-
-.splash p {
-	font-size: 24px;
 }
 
 /* Projects Page */
@@ -365,7 +350,8 @@ footer p {
 	.project-expo a {
 		color: var(--dark-1);
 	}
-	.project-expo h3, p {
+	.project-expo h3,
+	p {
 		text-align: center;
 		margin-bottom: var(--mb-2);
 	}
@@ -381,15 +367,77 @@ footer p {
 	}
 }
 
+/* General Page Secondary Page Styling */
+.splash {
+	padding: 5vh 0;
+	text-align: center;
+	width: 70vw;
+	display: block;
+	margin: auto;
+	color: white;
+}
+
+.splash h1 {
+	font-size: 8vw;
+	padding: var(--mb-1) 0;
+}
+
+.splash p {
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.splash {
+		padding: 5vh 0;
+		text-align: center;
+		width: 70vw;
+		display: block;
+		margin: auto;
+	}
+
+	.splash h1 {
+		font-size: 8vw;
+		padding: var(--mb-2) 0;
+	}
+
+	.splash p {
+		font-size: 25px;
+	}
+}
+
 /* About Page */
 
+#about-main {
+	background-color: #24252a;
+}
+
 #about-splash img {
-	margin-bottom: var(--mb-6);
+	margin-bottom: var(--mb-2);
+	width: 35vw;
 	border-radius: 30px;
+
+	border: 3px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+	#about-splash img {
+		width: 25vw;
+		border-radius: 30px;
+	}
 }
 
 /* Splash Page */
 
+#contact-main {
+	background-color: #24252a;
+}
+
 #contact-splash {
-	padding: 23vh 0;
+	padding: 10vh 0;
+}
+
+@media only screen and (min-width: 768px) {
+	#contact-splash {
+		padding: 23vh 0;
+	}
 }
