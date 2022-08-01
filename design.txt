@@ -1,52 +1,9 @@
-Navigation bar with the following items
-  - Home
-  - Projects
-  - Contact/Freelance info
-  - About
-
-Home page should have something cool that draws attention to it
-something with a really modern and nice design that has a techy feel to it
-  - it should also have links to my socials, linked-in, github, email, and you know
-  - I'm thinking of adding some sort of node line drawing art thing
-  - It should have a box with my picture and info about me, next to an animated spinning
-    3D node drawing
-
-When you scroll down it will have layers, each of which will lead to another of the
-sections of the website, however each one will have information about that section
-  - For example, the first layer will be about projects, it will entise the reader
-    and provide a little bit of insight into the projects, without giving away all
-    of the information
-  - Each page should take up the entire screen
-
-Finally there will be a footer with all of the other relevant information
-
-The color scheme should be dark, and revolve around black, and tasteful red
-Only use bootstrap to deterine positioning and element sizes. Font's and colors will be done manually
-  - In other words, only use the col-md-4 like types
-
-modify the scrollbar
-
-rem - relative to font size
-vh - percentage of viewport height
-scroll reveal 
-
-What i need to fix
-
-make navbar links not become vertical when it gets too small (make a sidebar)
-make background image not repeat when screen gets too narrow
-make all preview things stack instead of being columns
-
-
-Projects Page:
-Each section of the page will have a project on it
-Add graph of which programming languages were used for each of the project
-
-TODO
-Add as many cdn substitutes as possible to save money
-
-To make responsive
-Make navbar become a sidebar menu
-make link images smaller
-make image background images not repeat
-make columns stack
-
+1. Update About Me
+  * Make it sound more mature
+  * Add information about UCLA
+2. Update Projects Page
+  * Add information about CS33 Projects, ACM Cyber Site, Whats Bruin, maybe Mock Trial thing
+3. Add Resume Tab
+4. Update Home Page Slightly
+  * Target corporations as opposed to individuals
+5. Add more information to contact page
