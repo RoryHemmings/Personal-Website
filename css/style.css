@@ -172,8 +172,14 @@ footer p {
 	width: 100%;
 }
 
-#splash-container p {
+#splash-title {
 	font-size: 36px;
+	color: var(--light);
+	/*margin-bottom: var(--mb-2);*/
+}
+
+#splash-subtitle {
+	font-size: 14px;
 	color: var(--light);
 	margin-bottom: var(--mb-2);
 }
@@ -226,8 +232,15 @@ footer p {
 		background-color: #24252aa6;
 		width: 100%;
 	}
-	#splash-container p {
+	#splash-title {
 		font-size: 48px;
+		color: var(--light);
+		display: block;
+		margin: auto;
+		/*margin-bottom: var(--mb-2);*/
+	}
+	#splash-subtitle {
+		font-size: 22px;
 		color: var(--light);
 		display: block;
 		margin: auto;
